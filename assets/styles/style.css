@@ -1,0 +1,387 @@
+:root {
+    --main: #FA00FF;
+    --secondary: #9800FF;
+    --light-bg: #F6F4F4;
+    --dark-bg: #011936;
+}
+
+*:not(ol) {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: var(--light-bg);
+    color: var(--dark-bg);
+}
+
+p {
+    font-size: 1rem;
+}
+
+img {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+img, iframe, input, select, textarea {
+    border-radius: 0.5rem;
+}
+
+input, select, textarea {
+    border: 1px solid var(--dark-bg);
+}
+
+.nav--list {
+    list-style: none;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.nav--item {
+    margin: 1.2rem 0;
+}
+
+a {
+    color: var(--main);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+.link--active {
+    color: var(--secondary);
+}
+
+nav {
+    width: 100%;
+    background-color: var(--dark-bg);
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.nav--img {
+    width: 12rem;
+}
+
+main, footer {
+    text-align: center;
+}
+
+.main--title {
+    margin: 3rem 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+footer {
+    padding: 2.5rem;
+    margin-top: 2.5rem;
+    background-color: var(--dark-bg);
+    color: var(--main);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -1px 3px, rgba(0, 0, 0, 0.24) 0px -1px 2px;
+}
+
+/* Index */
+.home--img-airport {
+    width: 90%;
+}
+
+.main--text {
+    margin: 3rem 0 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.main--text img {
+    max-width: 70%;
+}
+
+.main--text p {
+    text-align: start;
+    padding: 2rem 4rem;
+}
+
+/* About Us */
+
+.about--row {
+    margin: 3.5rem 0;
+}
+
+.about--img {
+    width: 20rem;
+}
+
+.about--description {
+    max-width: 20rem;
+    margin: 1rem auto;
+}
+
+/* Contact */
+
+.contact--info {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 0 4rem;
+}
+
+.contact--img-window {
+    height: 40rem;
+    width: 80%;
+    object-fit: cover;
+}
+
+.contact--text {
+    margin: 1rem 4rem 1.5rem;
+    text-align: start;
+}
+
+/* More Information */
+
+table, th, td {
+    border: 2px solid;
+    border-collapse: collapse;
+}
+
+table {
+    margin: 4rem auto;
+    width: 80%;
+}
+
+th, td {
+    padding: 1rem;
+}
+
+/* Benefits and Tips */
+
+.benefits--row, .tips--row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    text-align: left;
+}
+
+.benefits--img, .tips--img {
+    max-width: 80%;
+}
+
+.benefits--list, .tips--list {
+    max-width: 15rem;
+}
+
+.benefits--list ul, .tips--list ul {
+    margin-left: 2rem;
+}
+
+.benefits--list ul li, .tips--list ul li {
+    margin: 1rem 0;
+}
+
+/* Raffle */
+textarea {
+    resize: none;
+}
+
+iframe {
+    width: 80%;
+    height: 10rem;
+    border: 0;
+}
+
+fieldset {
+    border: 0;
+    text-align: left;
+    margin: 0 auto;
+}
+
+fieldset div {
+    margin: 0.8rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+input, select {
+    padding: 0.4rem;
+}
+
+.form--footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.form--submit {
+    font-family: Georgia, serif;
+    width: 100%;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    background-color: var(--dark-bg);
+    color: var(--light-bg);
+    border: 0;
+}
+
+.form--submit:hover {
+    background-color: var(--main);
+}
+
+.raffle--map-title {
+    margin: 3rem 1rem 1rem;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px) {
+    table {
+        margin: 9rem auto;
+        width: 20rem;
+    }
+
+    th, td {
+        padding: 3rem;
+    }
+
+    .benefits--img, .tips--img {
+        max-width: 20rem;
+    }
+
+    iframe {
+        max-width: 22rem;
+        height: 12rem;
+    }
+
+    form {
+        width: 25rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav--list {
+        display: flex;
+        margin: 0;
+    }
+
+    .nav--item {
+        margin: 0 1.2rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .main--text {
+        margin: 3rem 0 2rem;
+        width: 90%;
+        flex-direction: row;
+    }
+
+    .main--text img {
+        width: 50%;
+    }
+
+    .main--text p {
+        text-align: start;
+        padding: 4rem;
+    }
+
+    .about--row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about--description {
+        width: 30rem;
+        text-align: start;
+        margin: 0 0 0 4rem;
+    }
+
+    .contact--info {
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .contact--text {
+        margin: 1rem 0 1.5rem;
+        text-align: center;
+    }
+
+    table {
+        margin: 4rem auto;
+    }
+
+    .benefits--row, .tips--row {
+        flex-direction: row;
+        column-gap: 3rem;
+        margin: 4rem 0;
+    }
+
+    .benefits--img, .tips--img {
+        max-width: 25rem;
+    }
+
+    .raffle--container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    form {
+        text-align: left;
+    }
+
+    fieldset {
+        margin: 0;
+    }
+
+    .form--footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .form--submit {
+        width: 5rem;
+    }
+
+    iframe {
+        max-width: 32rem;
+        height: 27rem;
+    }
+
+    .raffle--container {
+        margin: 0 2rem;
+    }
+}

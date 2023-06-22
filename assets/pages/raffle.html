@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+    <title>Mindy Travel | Raffle</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav--list">
+            <li class="nav--item">
+                <a href="../../index.html">Home</a>
+            </li>
+            <li class="nav--item">
+                <a href="aboutUs.html">About Us</a>
+            </li>
+            <li class="nav--item">
+                <a href="contact.html">Contact</a>
+            </li>
+            <li class="nav--item">
+                <a href="information.html">More Information</a>
+            </li>
+            <li class="nav--item">
+                <a href="benefitsTips.html">Benefits and Tips</a>
+            </li>
+            <li class="nav--item">
+                <a href="#" class="link--active">Raffle</a>
+            </li>
+        </ul>
+        <img class="nav--img" src="../images/logo.png" alt="Mindy Travel Logo">
+    </nav>
+
+    <main>
+        <div class="main--title">
+            <h1>
+                Raffle
+            </h1>
+            <p class="subtitle">
+                You can collaborate and participate in a raffle for a 1-week trip
+            </p>
+        </div>
+        <div class="raffle--container">
+            <form action="show_data.html" method="get">
+                <label for="name">First Name</label>
+                <input required type="text" id="name" name="f-name">
+
+                <label for="surname">Last Name</label>
+                <input required type="text" id="surname" name="l-name">
+
+                <label for="email">E-Mail</label>
+                <input required type="email" id="email" name="user-email">
+
+                <label for="country">Choose Country</label>
+                <select required name="chosen-country" id="country">
+                    <option value="">--Select an option--</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">United States</option>
+                    <option value="mexico">Mexico</option>
+                    <option value="spain">Spain</option>
+                    <option value="finland">Finland</option>
+                </select>
+
+                <label for="date">Choose Country</label>
+                <select required name="chosen-date" id="date">
+                    <option value="">--Select an option--</option>
+                    <option value="july-third">2023/07/03</option>
+                    <option value="july-tenth">2023/07/10</option>
+                    <option value="july-twenty-second">2023/07/22</option>
+                    <option value="august-twelfth">2023/08/12</option>
+                    <option value="august-fifteenth">2023/08/15</option>
+                </select>
+
+                <fieldset>
+                    <legend>
+                        Payment Options
+                    </legend>
+                    <div>
+                        <input required type="radio" id="cash" name="payments" value="cash">
+                        <label for="cash">Cash</label>
+                    </div>
+                    <div>
+                        <input required type="radio" id="credit" name="payments" value="credit">
+                        <label for="credit">Credit Card</label>
+                    </div>
+                    <div>
+                        <input required type="radio" id="debit" name="payments" value="debit">
+                        <label for="debit">Debit Card</label>
+                    </div>
+                </fieldset>
+
+                <label for="message">Message (Optional)</label>
+                <textarea name="optional-message" id="message" cols="30" rows="10"></textarea>
+
+                <div class="form--footer">
+                    <div>
+                        <input required type="checkbox" id="terms-and-conditions" name="terms-confirmation" value="accepted-terms">
+                        <label for="terms-and-conditions">I accept terms and conditions...</label>
+                    </div>       
+                    <input class="form--submit" type="submit" value="Send">
+                </div>
+            </form>
+            <section>
+                <h2 class="raffle--map-title">
+                    To participate you must be from Toronto, Canada
+                </h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.30943582457!2d-79.37805805!3d43.7182412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20Ontario%2C%20Canad%C3%A1!5e0!3m2!1ses!2sar!4v1687278631485!5m2!1ses!2sar"
+                    allowfullscreen="" 
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            Created by: Valentina Belén Sánchez
+        </p>
+    </footer>
+</body>
+</html>
